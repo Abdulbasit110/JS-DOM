@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <input
+        id="button"
+        type="button"
+        value="BLACK MODE"
+        onclick="changeClass()"
+      />
+    </section>
+    <section>
+      <div class="logIn" id="logIn">
+        <div class="heading">Log In</div>
+        <!-- <hr /> -->
+        <div class="content">
+          <label for="username">Username</label>
+          <input type="text" placeholder="username" />
+        </div>
+
+        <div class="content">
+          <div>
+            <label for="password">Password</label>
+            <input id="password" type="password" />
+          </div>
+          <div class="password">
+            <label for="box">show password</label>
+            <input id="box" onclick="changeType()" type="checkbox" />
+          </div>
+        </div>
+
+        <div class="signUp">new user? <a href="">sign up</a></div>
+        <div class="signUp"><button>Log In</button></div>
+      </div>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>

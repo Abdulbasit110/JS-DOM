@@ -1,0 +1,67 @@
+.logIn {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(131, 128, 128);
+  border-radius: 0.5rem;
+  height: 22rem;
+  width: 20rem;
+  /* display: block; */
+  margin-inline: auto;
+  margin-top: 2rem;
+  /* justify-content: space-around; */
+  row-gap: 1.5rem;
+}
+
+.blackMode {
+  background-color: rgb(34, 33, 33);
+  color: rgb(255, 255, 255);
+}
+
+input:focus {
+  outline: none;
+}
+.heading {
+  display: block;
+  /* align-self: auto; */
+  margin-inline: auto;
+  margin-block: 1rem;
+  font-weight: 700;
+}
+
+.content {
+  margin-left: 1rem;
+}
+#box {
+  vertical-align: middle;
+}
+/* .password {
+  display: block;
+  margin-inline: auto;
+} */
+.signUp {
+  align-self: center;
+}
+
+input[type="text"],
+input[type="password"] {
+  height: 1.3rem;
+}
+button {
+  background-color: rgb(65, 65, 201);
+  color: whitesmoke;
+  border: none;
+  padding-inline: 1.4rem;
+  padding-block: 0.7rem;
+  border-radius: 0.3rem;
+  /* height: 2rem; */
+}
+.password {
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+input[type="button"] {
+  padding: 1rem;
+  border-radius: 0.3rem;
+  font-weight: 600;
+}
