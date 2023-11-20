@@ -9,7 +9,13 @@ function changeClass() {
   button = document.getElementById("button");
   page.classList.toggle("blackMode");
   button.classList.toggle("blackMode");
-  page.classList.contains("blackMode")
-    ? (button.value = "LIGHT MODE")
-    : (button.value = "BLACK MODE");
+  if (page.classList.contains("blackMode")) {
+    button.value = "LIGHT MODE";
+    document.body.style.backgroundColor = "black";
+    button.style.border = "0.2rem solid white";
+  } else {
+    button.value = "BLACK MODE";
+    document.body.style.backgroundColor = "white";
+    button.style.border = "0.2rem solid black";
+  }
 }
